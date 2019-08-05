@@ -1,0 +1,52 @@
+package fellowship;
+
+import java.util.*;
+
+public class Demo {
+	public static void main(String arg[]) {
+		int i=312;
+		int j=321;
+		Arrays.sort(ArrayS2); 
+		System.out.println("Enter another position You wants to cross");
+	
+	}
+
+}
+
+
+/*
+public static void anagram() {
+	for (int i = 0; i < nos.size(); i++) {
+		for (int j = i+1; j < nos.size(); j++) {
+			int x=nos.get(i);
+			int a[]=new int[3];
+			a[0]=x%10;
+			x=x/10;
+			a[1]=x%10;
+			x=x/10;
+			a[2]=x%10;
+			int x=nos.get(j);	
+			int b[]=new int[3];
+			b[0]=x%10;
+			x=x/10;
+			b[1]=x%10;
+			x=x/10;
+			b[2]=x%10;
+		
+			
+			
+	
+    if(str1.length()==str2.length()) {
+    	char[] ArrayS1 = str1.toLowerCase().toCharArray();  
+    	char[] ArrayS2 = str2.toLowerCase().toCharArray();  
+    	Arrays.sort(ArrayS1);  
+    	Arrays.sort(ArrayS2);  
+    	status = Arrays.equals(ArrayS1, ArrayS2);  
+    	if (status) {  
+    		System.out.println(str1 + " and " + str2 + " are anagrams");  
+    	} 
+    	else {  
+    		System.out.println(str1 + " and " + str2 + " are not anagrams");  
+    	} 
+    }
+}}}*/

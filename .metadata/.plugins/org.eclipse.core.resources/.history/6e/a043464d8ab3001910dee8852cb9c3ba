@@ -1,0 +1,16 @@
+package fellowship;
+
+import java.util.*;
+
+public class Demo {
+	public static void main(String arg[]) {
+		int i=312;
+		int j=321;
+		Arrays.sort(ArrayS2); 
+		System.out.println("Enter another position You wants to cross");
+	
+	}
+
+}
+
+

@@ -1,0 +1,14 @@
+package fellowship;
+import java.util.*;
+public class FindYourNumber {
+
+	public static void main(String[] args) {
+		Scanner obj=new Scanner(System.in);
+		System.out.println("Enter  value of n which will generate N=2^n");
+		int n=obj.nextInt();
+		double N=Math.pow(2, n);
+		// TODO Auto-generated method stub
+
+	}
+
+}

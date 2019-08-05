@@ -1,0 +1,14 @@
+class TimeTest2 {
+   public static void main(String[] args) {
+
+      Stopwatch timer = new Stopwatch().start();
+
+      long total = 0;
+      for (int i = 0; i < 10000000; i++) {
+         total += i;
+      }
+
+      timer.stop();
+      System.out.println(timer.getElapsedTime());
+   }
+}

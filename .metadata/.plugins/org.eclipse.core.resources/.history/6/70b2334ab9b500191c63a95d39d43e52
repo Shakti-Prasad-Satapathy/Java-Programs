@@ -1,0 +1,22 @@
+package Algorithms;
+
+import java.util.Scanner;
+import Utility.Utility;
+public class monthlyPayment {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Utility obj=new Utility();
+		Scanner obj1=new Scanner(System.in);
+		System.out.println("Enter the principal loan amount ");
+		int P=obj1.nextInt();
+		System.out.println("Enter the interest per cent");
+		int R=obj1.nextInt();
+		System.out.println("Enter the total years");
+		int Y=obj1.nextInt();
+		obj.payment(P, R, Y);
+		
+
+	}
+
+}

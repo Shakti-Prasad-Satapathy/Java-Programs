@@ -1,0 +1,25 @@
+package fellowship;
+
+import java.util.*;
+
+public class Demo {
+	public static void main(String arg[]) {
+		int currentIndex=0;
+		int j=0;
+		j=i;
+		String s = "ABC";
+		char[] ch=s.toCharArray();
+		if (currentIndex == ch.length - 1) {
+			System.out.println(String.valueOf(ch));
+			for (int i = currentIndex; i < ch.length; i++){
+				char temp = ch[i];
+				ch[i] = ch[j];
+				ch[j] = temp;
+				permutations(ch, currentIndex + 1);
+				char temp = ch[i];
+				ch[i] = ch[j];
+				ch[j] = temp;
+    	
+	}
+
+}

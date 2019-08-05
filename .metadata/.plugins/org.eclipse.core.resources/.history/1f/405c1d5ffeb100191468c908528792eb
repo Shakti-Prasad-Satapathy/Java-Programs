@@ -1,0 +1,14 @@
+package fellowship;
+
+import java.util.*;
+
+public class Demo {
+	public static void main(String arg[]) {
+	int a=1,b=1,c=1;
+	int i,j,k=1;
+	if(a==1&&b==1&&c==1) {
+		System.out.println("Enter another position You wants to cross");
+	}
+	}
+
+}

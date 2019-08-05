@@ -1,0 +1,16 @@
+package fellowship;
+
+import java.util.*;
+
+public class Demo {
+	public static void main(String arg[]) {
+		int currentIndex=0;
+		
+		String s = "ABC";
+		char[] ch=s.toCharArray();
+		if (currentIndex == ch.length - 1) {
+			System.out.println(String.valueOf(ch));
+    	
+	}
+
+}

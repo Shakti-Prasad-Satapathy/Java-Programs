@@ -1,0 +1,39 @@
+package fellowship;
+import java.util.*;
+public class FindYourNumber {
+
+	public static void main(String[] args) {
+		int count=1;
+		Scanner obj=new Scanner(System.in);
+		System.out.println("Enter  value of n which will generate N=2^n");
+		int n=obj.nextInt();
+		double N=Math.pow(2, n);
+		System.out.println(N);
+		// TODO Auto-generated method stub
+		int numarray[]=new int[n];
+		for (int i=1;i<N;i++) {
+			numarray[i-1]=i;
+		}
+		System.out.println("Think of a number between 0 to"+N);
+		int first = 0, last = numarray.length - 1; 
+		   int mid = (first + last)/2;  
+		   while(count==1) {
+		   System.out.println("press '1' if your number is between"+numarray[first]+" to "+numarray[mid]+"Else press '0'");
+		   int check=obj.nextInt();
+		   if(check==1) {
+			   last=mid-1;
+			   mid = (first + last)/2;
+		   }
+		   else {
+		   first=mid+1;
+		   mid = (first + last)/2;
+		   }
+		   if(first==mid || last==mid) {
+			   System.out.println("Your choosen number is"+ mid);
+			   count=0;
+		   }
+		   }
+		   
+	}
+
+}

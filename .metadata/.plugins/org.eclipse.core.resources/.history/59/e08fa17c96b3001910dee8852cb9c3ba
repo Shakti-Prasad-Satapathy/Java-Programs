@@ -1,0 +1,28 @@
+
+package fellowship; 
+import java.util.ArrayList;
+import java.util.Arrays;
+public class Demo {		
+		 public static void main(String args[]){ 
+			 int x=71; int y=17;
+			 int a[]=new int[3];
+				a[0]=x%10;
+				x=x/10;
+				a[1]=x%10;
+				x=x/10;
+				a[2]=x%10;
+				 int b[]=new int[3];
+					b[0]=y%10;
+					y=y/10;
+					b[1]=y%10;
+					y=y/10;
+					b[2]=y%10;
+				
+					Arrays.sort(a);
+					Arrays.sort(b);
+					
+					if (Arrays.equals(a, b) ){  
+			   		System.out.println(x + " and " + y + " are anagrams");}
+		 }
+  
+}

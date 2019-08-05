@@ -1,0 +1,51 @@
+package Algorithms;
+import java.util.*;
+public class VendingMachine {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner obj=new Scanner(System.in);
+		System.out.println("Enter the amount you wants to withdraw");
+		long amount=obj.nextInt();
+		int remender=0;
+		int quotient=0;
+		remender=(int) (amount%1000);
+		quotient=(int) (amount/1000);
+		System.out.println(quotient+" nos of 1000 rs");
+		
+		remender=(int) (remender%500);
+		quotient=(int) (quotient/500);
+		System.out.println(quotient+" nos of 500 rs");
+
+		remender=(int) (remender%100);
+		quotient=(int) (quotient/100);
+		System.out.println(quotient+" nos of 100 rs");
+		quotient=remender;
+		
+		remender=(int) (remender%50);
+		quotient=(int) (quotient/50);
+		System.out.println(quotient+" nos of 50 rs");
+		quotient=remender;
+		
+		remender=(int) (remender%10);
+		quotient=(int) (quotient/10);
+		System.out.println(quotient+" nos of 10 rs");
+		quotient=remender;
+		
+		remender=(int) (remender%5);
+		quotient=(int) (quotient/5);
+		System.out.println(quotient+" nos of 5 rs");
+		quotient=remender;
+		
+		remender=(int) (remender%2);
+		quotient=(int) (quotient/2);
+		System.out.println(quotient+" nos of 2 rs");
+		quotient=remender;
+		
+		//remender=(int) (remender%1);
+		//quotient=(int) (amount/500);
+		System.out.println(quotient+" nos of 1 rs require");
+
+	}
+
+}

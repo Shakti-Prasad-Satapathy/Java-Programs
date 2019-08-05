@@ -1,0 +1,25 @@
+
+package fellowship; 
+import java.util.ArrayList;
+import java.util.Arrays;
+public class Demo {		
+		 public static void main(String args[]){ 
+			 int x=173; 
+			 int a[]=new int[6];
+				a[0]=x%10;
+				x=x/10;
+				a[1]=x%10;
+				x=x/10;
+				a[2]=x%10;
+				x=x/10;
+				a[3]=x%10;
+				x=x/10;
+				a[4]=x%10;
+				x=x/10;
+				a[5]=x%10;
+				
+				for(int i=0;i<4;i++)//length is the property of array  
+					System.out.println(a[i]);
+		 }
+  
+}

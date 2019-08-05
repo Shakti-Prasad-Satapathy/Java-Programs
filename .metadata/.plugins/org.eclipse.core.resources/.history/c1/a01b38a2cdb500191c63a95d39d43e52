@@ -1,0 +1,15 @@
+package Algorithms;
+
+public class Demo_Demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stubString
+		String s1="apple";
+		String s2="apple";
+		if(s1.equals(s2)) {
+			System.out.println("*******************************************");
+		}
+
+	}
+
+}

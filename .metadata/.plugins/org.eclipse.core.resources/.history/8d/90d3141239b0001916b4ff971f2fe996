@@ -1,0 +1,13 @@
+package fellowship;
+import java.util.*;
+public class BinarySearchWord {
+	public static void main(String arg[]) {
+		Scanner obj= new Scanner(System.in) ;
+			String[] words = { "Books", "Pens", "Pencils", "Notebooks", "cat", "Dog" ,"School" };
+		System.out.println("Enter the word you want to search");
+		String str=obj.nextLine();
+		Arrays.sort(words);
+		System.out.println(words);
+	}
+
+}

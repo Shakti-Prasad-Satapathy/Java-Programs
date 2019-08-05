@@ -1,0 +1,14 @@
+package fellowship;
+
+import Utility.Utility;
+
+public class PrimeNumberInRange {
+
+	public static void main(String[] args) {
+		Utility obj= new Utility();
+		for(int i = 2; i<=1000;){
+			obj.checkPrime(i);  
+	      }
+	}
+
+}

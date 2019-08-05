@@ -1,0 +1,33 @@
+
+package fellowship;
+
+public class PrimeAndPalindrome {
+int temp=0, r=0, sum=0, tmp=0;
+	public static void main(String[] args) {
+		for(int i = 2; i<=1000;){
+	         int prime = 1;
+	         for(int j = 2; j <=i; j++) {
+	            if((i % j) == 0 && j!=i) {
+	               prime = 0;
+	            }
+	         }
+	         if (prime != 0){
+	        	 temp=i;
+	        	 tmp=temp;
+	        	  while(n>0){    
+	        	   r=n%10;  //getting remainder  
+	        	   sum=(sum*10)+r;    
+	        	   n=n/10;    
+	        	  }    
+	        	  if(temp==sum)    
+	        	   System.out.println("palindrome number "); 
+	            System.out.println(i+" is a prime number");
+	            i++;
+	         }
+	         else
+	         i ++;
+	      }
+	}
+
+}
+

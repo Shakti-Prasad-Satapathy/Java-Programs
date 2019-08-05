@@ -1,0 +1,9 @@
+int[] result=new int[8];
+        	int[] onehap=new int[4];
+        	int[] twohap=new int[4];
+        	for(int i=0;i<4;i++) {
+        		onehap[i]=binary[i];
+        	}
+        	for(int i=0;i<4;i++) {
+        		twohap[i]=binary[i];
+        	}

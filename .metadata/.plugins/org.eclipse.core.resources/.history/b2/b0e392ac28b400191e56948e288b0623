@@ -1,0 +1,163 @@
+package fellowship;
+import java.util.Arrays;
+public class SortAndSearch {
+	/*********Searching element in integer array using Binary search****************/
+	
+	public static void binarySearch4int(int arr[], int key){  
+		int first = 0, last = arr.length - 1; 
+		   int mid = (first + last)/2;  
+		   while( first <= last ){  
+		      if ( arr[mid] < key ){  
+		        first = mid + 1;     
+		      }else if ( arr[mid] == key ){  
+		        System.out.println("Element is found at index: " + mid);  
+		        break;  
+		      }else{  
+		         last = mid - 1;  
+		      }  
+		      mid = (first + last)/2;  
+		   }  
+		   if ( first > last ){  
+		      System.out.println("Element is not found!");  
+		   }  
+		 }  
+	
+	////////////////////////////////////////////////////////////////////////////////////////////////////
+	/*********Sorting elements in integer array using Bubble Sort ****************/
+	public static void bubbleSort4int(int[] arr) {  
+        int n = arr.length;  
+        int temp = 0;  
+         for(int i=0; i < n; i++){  
+                 for(int j=1; j < (n-i); j++){  
+                          if(arr[j-1] > arr[j]){  
+                                 //swap elements  
+                                 temp = arr[j-1];  
+                                 arr[j-1] = arr[j];  
+                                 arr[j] = temp;  
+                         }  
+                          
+                 }  
+         }  
+         System.out.println("Array After Bubble Sort");  
+         for(int i=0; i < arr.length; i++){  
+                 System.out.print(arr[i] + " ");  
+         }  
+         System.out.println();
+  
+    }  
+	
+	/*******************************************************************************************************/
+	/*********Sorting elements in integer array using Insertion Sort ****************/
+	public static void insertionSort4int(int array[]) {  
+        int n = array.length;  
+        for (int j = 1; j < n; j++) {  
+            int key = array[j];  
+            int i = j-1;  
+            while ( (i > -1) && ( array [i] > key ) ) {  
+                array [i+1] = array [i];  
+                i--;  
+            }  
+            array[i+1] = key;  
+        }
+        System.out.println("After Insertion Sort");    
+        for(int i=0; i < array.length; i++){     
+            System.out.print(array[i] + " "); 
+        }
+        System.out.println();
+    }  
+	
+	/*************************************************************************************************/
+	/*********Sorting elements in String array using Bubble Sort ****************/
+	public static void bubbleSort4str(String[] arrs) {
+	 String temp="";
+     System.out.println("Sorted string...");
+     for (int j = 0; j < arrs.length; j++) {
+        for (int i = j + 1; i < arrs.length; i++) {
+           // comparing strings
+           if (arrs[i].compareTo(arrs[j]) < 0) {
+              temp = arrs[j];
+              arrs[j] = arrs[i];
+              arrs[i] = temp;
+           }
+        }
+     }
+     System.out.println("Array After Bubble Sort");  
+     for(int i=0; i < arrs.length; i++){  
+             System.out.print(arrs[i] + " ");  
+     }  
+     System.out.println();
+     }
+     
+     /***************************************************************************************************/
+	
+	/*********Sorting elements in String array using Insertion Sort ****************/
+	public static void insertionSort4str(String array[]) { 
+		int i,j;
+		  String key;
+		  for (j = 1; j < array.length; j++) { //the condition has changed
+		    key = array[j];
+		    i = j - 1;
+		    while (i >= 0) {
+		      if (key.compareTo(array[i]) > 0) {//here too
+		        break;
+		      }
+		      array[i + 1] = array[i];
+		      i--;
+		    }
+		  }
+		  System.out.println("After Insertion Sort"+Arrays.toString(array));
+	}
+	
+	/**********************************************************************************/
+	
+	static void binarySearch4str(String[] arr, String x) 
+    { 
+        int l = 0, r = arr.length - 1; 
+        while (l <= r) { 
+            int m = l + (r - l) / 2; 
+  
+            int res = x.compareTo(arr[m]); 
+  
+            // Check if x is present at mid 
+            if (res == 0) 
+            	System.out.println("Element is found at index: " + m);
+  
+            // If x greater, ignore left half 
+            if (res > 0) 
+                l = m + 1; 
+  
+            // If x is smaller, ignore right half 
+            else
+                r = m - 1; 
+        } 
+
+        if ( l < r ) 
+		      System.out.println("Element is not found!"); 
+    } 
+	
+	/********************************************************************/
+	
+		public static void main(String args[]){  
+		        int arr[] = {3,60,35,2,45,320,5};
+		        
+		        bubbleSort4int(arr);
+		        
+		        insertionSort4int(arr);
+		        
+		        Arrays.sort(arr);
+		        int key = 35;    
+		        binarySearch4int(arr,key);  
+		        
+		        String str[] = { "s", "k", "r", "v", "n"};
+		        
+		        bubbleSort4str(str);
+		        
+		        insertionSort4str(str);
+		        
+		        Arrays.sort(str);
+		        String skey="h";
+		        binarySearch4str(str,skey);
+		        
+		        
+		 }  
+		}  

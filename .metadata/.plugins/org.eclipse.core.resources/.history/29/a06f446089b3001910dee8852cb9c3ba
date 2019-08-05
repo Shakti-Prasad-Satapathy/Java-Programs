@@ -1,0 +1,18 @@
+
+package fellowship; 
+import java.util.ArrayList;
+import java.util.Arrays;
+public class PrimeAndPalindrome {
+	static  ArrayList<Integer> nos = new ArrayList<>();
+
+	
+		 public static void main(String args[]){ 
+
+			 for(int i = 2; i<=10000;i++){
+				 checkPrime(i);
+			 }
+			System.out.println(nos.toString());
+			anagram();
+			 
+		}    
+}
